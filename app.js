@@ -36,3 +36,23 @@ form.addEventListener('submit', async event => {
   catch { status.dataset.state = 'error'; status.textContent = 'Votre réponse n’a pas pu être envoyée. Réessayez dans un instant.'; }
   finally { clearTimeout(timeout); submit.disabled = false; }
 });
+
+// Garder la hauteur du document stable lorsque les liens disparaissent.
+const siteHeader = document.querySelector('body > header');
+const topNavigation = siteHeader.querySelector('nav');
+const updateNavigation = () => {
+  const scrolled = window.scrollY > 240;
+  document.documentElement.classList.toggle('page-scrolled', scrolled);
+  topNavigation.inert = scrolled;
+};
+const sizeHeader = () => {
+  document.documentElement.style.setProperty('--header-height', `${siteHeader.getBoundingClientRect().height}px`);
+  document.documentElement.style.setProperty('--navigation-height', `${topNavigation.getBoundingClientRect().height}px`);
+};
+updateNavigation();
+sizeHeader();
+window.addEventListener('scroll', updateNavigation, { passive: true });
+window.addEventListener('pageshow', updateNavigation);
+const headerObserver = new ResizeObserver(sizeHeader);
+headerObserver.observe(siteHeader);
+headerObserver.observe(topNavigation);
