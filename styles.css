@@ -10,3 +10,10 @@ body>header>nav{position:absolute;top:100%;left:0;width:100%;background:#fff;bor
 main{padding-top:var(--navigation-height, 48px)}
 .page-scrolled body>header>nav{visibility:hidden;pointer-events:none}
 @media(max-width:650px){.brandbar{padding:26px 20px 18px}}
+
+/* Couleurs inversées sur le texte de la première section. */
+.hero-copy{background:var(--ink);color:#fff}
+.hero-copy h1 em,.hero-copy .small{color:#fff}
+.hero-copy .button{background:#fff;color:var(--ink);border-color:#fff}
+.hero-copy .button:hover{background:var(--cream);border-color:var(--cream)}
+.hero-copy .button:focus-visible{outline-color:#fff}
