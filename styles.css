@@ -87,3 +87,17 @@ body>header>nav{padding-block:4px}
 @media(max-height:500px) and (orientation:landscape){
   .brandbar{padding-block:10px}
 }
+
+/* Menu dépliant réservé aux téléphones. */
+.menu-toggle{display:none}
+.menu-cross{display:none}
+@media(max-width:650px){
+  .brandbar{padding-inline:56px}
+  .brandbar>.menu-toggle{display:grid;left:auto;right:8px}
+  body>header>nav{display:none;flex-direction:column;gap:0;padding:12px 24px;max-height:calc(100dvh - var(--header-height,98px));overflow-y:auto;box-shadow:0 12px 20px #062B1F18}
+  body>header.menu-open>nav{display:flex;visibility:visible;pointer-events:auto}
+  body>header>nav a{font-size:14px;min-height:48px;width:100%}
+  main{padding-top:0}
+  .menu-open .menu-lines{display:none}
+  .menu-open .menu-cross{display:block}
+}

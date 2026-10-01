@@ -40,10 +40,12 @@ form.addEventListener('submit', async event => {
 // Garder la hauteur du document stable lorsque les liens disparaissent.
 const siteHeader = document.querySelector('body > header');
 const topNavigation = siteHeader.querySelector('nav');
+const menuToggle = document.querySelector('#menu-toggle');
+const mobileNavigation = window.matchMedia('(max-width: 650px)');
 const updateNavigation = () => {
   const scrolled = window.scrollY > 240;
   document.documentElement.classList.toggle('page-scrolled', scrolled);
-  topNavigation.inert = scrolled;
+  topNavigation.inert = mobileNavigation.matches ? !siteHeader.classList.contains('menu-open') : scrolled;
 };
 const sizeHeader = () => {
   document.documentElement.style.setProperty('--header-height', `${siteHeader.getBoundingClientRect().height}px`);
@@ -56,3 +58,26 @@ window.addEventListener('pageshow', updateNavigation);
 const headerObserver = new ResizeObserver(sizeHeader);
 headerObserver.observe(siteHeader);
 headerObserver.observe(topNavigation);
+
+const setMenuOpen = (open) => {
+  siteHeader.classList.toggle('menu-open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+  updateNavigation();
+};
+menuToggle.addEventListener('click', () => setMenuOpen(!siteHeader.classList.contains('menu-open')));
+topNavigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+  if (!mobileNavigation.matches) return;
+  setMenuOpen(false);
+  const target = document.querySelector(link.getAttribute('href'));
+  if (target) { target.tabIndex = -1; target.focus({ preventScroll: true }); }
+}));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && siteHeader.classList.contains('menu-open')) {
+    setMenuOpen(false); menuToggle.focus();
+  }
+});
+document.addEventListener('click', event => {
+  if (!siteHeader.contains(event.target) || event.target.closest('#search-open, .logo')) setMenuOpen(false);
+});
+mobileNavigation.addEventListener('change', () => { setMenuOpen(false); sizeHeader(); });
