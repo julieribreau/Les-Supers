@@ -17,3 +17,6 @@ main{padding-top:var(--navigation-height, 48px)}
 .hero-copy .button{background:#fff;color:var(--ink);border-color:#fff}
 .hero-copy .button:hover{background:var(--cream);border-color:var(--cream)}
 .hero-copy .button:focus-visible{outline-color:#fff}
+
+/* Typographie des liens identique à celle du bandeau Écrin. */
+body>header>nav a{font-family:"Montserrat",Arial,sans-serif;font-weight:500;font-size:clamp(0.375rem,0.95vw,0.7875rem);line-height:1.2;letter-spacing:normal}
