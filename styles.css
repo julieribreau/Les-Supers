@@ -14,8 +14,8 @@ main{padding-top:var(--navigation-height, 48px)}
 /* Couleurs inversées sur le texte de la première section. */
 .hero-copy{background:var(--ink);color:#fff}
 .hero-copy h1 em,.hero-copy .small{color:#fff}
-.hero-copy .button{background:#fff;color:var(--ink);border-color:#fff}
-.hero-copy .button:hover{background:var(--cream);border-color:var(--cream)}
+.hero-copy .button{background:#000;color:#fff;border-color:#000}
+.hero-copy .button:hover{background:#1a1a1a;border-color:#1a1a1a}
 .hero-copy .button:focus-visible{outline-color:#fff}
 
 /* Typographie des liens identique à celle du bandeau Écrin. */
