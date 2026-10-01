@@ -23,6 +23,17 @@ jobs:
         run: |
           mkdir _site
           cp index.html styles.css app.js config.js favicon.svg _site/
+          python3 - <<'PY'
+          import hashlib
+          from pathlib import Path
+          site = Path('_site')
+          page = site / 'index.html'
+          html = page.read_text()
+          for name in ('styles.css', 'app.js', 'config.js', 'favicon.svg'):
+              version = hashlib.sha256((site / name).read_bytes()).hexdigest()[:12]
+              html = html.replace(f'"{name}"', f'"{name}?v={version}"')
+          page.write_text(html)
+          PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
