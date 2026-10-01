@@ -3,10 +3,10 @@
 @media(max-width:650px){.announcement{font-size:8px;letter-spacing:1.2px}.brandbar{padding:20px}.logo{font-size:35px}.header-cta{display:none}nav{justify-content:flex-start;gap:23px;overflow:auto;white-space:nowrap;padding:14px 20px}nav a{font-size:9px}.hero{grid-template-columns:1fr}.hero-copy{padding:45px 7% 40px}h1{font-size:63px;letter-spacing:-3px}.hero-art{min-height:420px}.bottle-set{max-width:440px}.bottle{height:230px}.bottle-label{height:175px}.art-word{font-size:69px;top:22px}.art-caption{bottom:37px;font-size:8px}.concept{bottom:14px}.ticker{font-size:8px;letter-spacing:1px;gap:10px}.ticker span:last-of-type,.ticker span:last-of-type+span{display:none}.section{padding:57px 7%}.split{grid-template-columns:1fr;gap:15px}.section h2{font-size:39px}.section-heading{display:block}.section-heading>p{margin-top:24px}.products{gap:12px}.product{padding:20px 14px}.product h3{font-size:26px;min-height:2.2em}.category{font-size:8px}.product-top{font-size:8px;margin-bottom:30px}.product .timing{min-height:3.3em}.product>p:not(.category):not(.timing){min-height:8.25em}.objectives p{min-height:6.6em}.product button{font-size:10px}.principles{grid-template-columns:1fr;gap:20px;margin-top:25px}.principles p{max-width:none}.commitment h2{font-size:46px}.contact{grid-template-columns:1fr;gap:25px}.contact form{padding:23px}.contact h2{font-size:48px}.choices{gap:6px}.choices label{font-size:10px}footer{flex-direction:column;text-align:center;gap:16px}.eyebrow{font-size:9px;margin-bottom:22px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* Bandeau blanc et navigation escamotable, comme sur Écrin. */
-html{scroll-padding-top:calc(var(--header-height, 136px) + 24px)}
+html{scroll-padding-top:calc(var(--header-height, 98px) + 24px)}
 body>header{position:sticky;top:0;z-index:20;background:#fff}
-.brandbar{padding:48px 5% 28px}
+.brandbar{padding:30px 5% 20px}
 body>header>nav{position:absolute;top:100%;left:0;width:100%;background:#fff;border-top:0}
 main{padding-top:var(--navigation-height, 48px)}
 .page-scrolled body>header>nav{visibility:hidden;pointer-events:none}
-@media(max-width:650px){.brandbar{padding:38px 20px 24px}}
+@media(max-width:650px){.brandbar{padding:26px 20px 18px}}
