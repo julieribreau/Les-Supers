@@ -101,3 +101,112 @@ body>header>nav{padding-block:4px}
   .menu-open .menu-lines{display:none}
   .menu-open .menu-cross{display:block}
 }
+
+/* Direction artistique : blanc, vert profond, typographie éditoriale. */
+body{background:#fff}
+main{font-family:"Montserrat",Arial,sans-serif;font-weight:400}
+main h1,main h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;letter-spacing:-0.045em}
+main h1 em,main h2 em{font-family:inherit;font-style:normal;font-weight:400;color:inherit}
+main p{line-height:1.75}
+main .eyebrow{font-size:10px;letter-spacing:0.22em;font-weight:500;display:flex;align-items:center;gap:16px}
+main .eyebrow::after{content:"";height:1px;width:48px;background:currentColor;opacity:.45;flex-shrink:0}
+main .button{border-radius:40px;font-weight:500;font-size:13px;padding:13px 27px;min-height:46px;background:var(--ink);border-color:var(--ink);color:#fff}
+main .button:hover{background:#174637;border-color:#174637}
+main .button:focus-visible{outline-color:var(--ink)}
+.editorial-hero{position:relative;grid-template-columns:1fr 1fr;min-height:650px;overflow:hidden;background:#fff}
+.editorial-hero::after{content:"";position:absolute;inset:12% 0 0;pointer-events:none;background:url('assets/flow-lines.svg') center bottom/100% auto no-repeat;opacity:.4}
+.hero-copy{background:transparent;color:var(--ink);padding:70px 5% 50px 14%;position:relative;z-index:1}
+.hero-copy h1{font-size:clamp(52px,5.9vw,86px);line-height:1.02;margin-bottom:26px}
+.hero-copy h1 em,.hero-copy .small{color:var(--ink)}
+.hero-copy .intro{max-width:440px;font-size:15px}
+.hero-copy .button{background:var(--ink);border-color:var(--ink);color:#fff}
+.hero-copy .button:hover{background:#174637;border-color:#174637}
+.hero-copy .small{font-size:10px;opacity:.75}
+.hero-art{background:#fff;min-height:650px;position:relative;isolation:auto}
+.hero-art::before{display:none}
+.hero-bottle{position:relative;z-index:1;display:block;width:78%;height:600px;object-fit:contain;mix-blend-mode:multiply}
+.visual-motto{position:absolute;top:65px;right:7%;z-index:2;font-size:9px;line-height:2.5;letter-spacing:.24em}
+.hero-art .concept{bottom:20px;z-index:2;font-size:9px;letter-spacing:.05em}
+.hero-markers{display:flex;gap:38px;margin-top:34px}
+.hero-markers>span{font-size:9px;line-height:1.6;letter-spacing:.15em}
+.hero-markers i{display:grid;place-items:center;width:37px;height:37px;border:1px solid var(--ink);border-radius:50%;font-size:11px;font-style:normal;letter-spacing:0;margin-bottom:12px}
+.section{padding:85px 7%}
+.section h2{font-size:clamp(36px,4vw,58px);line-height:1.13}
+.daily{display:grid;grid-template-columns:1fr 1fr;padding:0;background:#f5f7f6;border:0}
+.daily-photo{margin:0;position:relative;min-height:460px}
+.daily-photo img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:28% center}
+.daily-photo figcaption{position:absolute;top:35px;left:8%;font-size:10px;line-height:1.8;letter-spacing:.2em;color:#fff;text-shadow:0 1px 6px #062b1f}
+.daily-copy{padding:65px 10%;align-self:center}
+.daily-copy p{font-size:14px}
+.daily-copy h2{font-size:clamp(32px,3.5vw,50px)}
+.text-link{display:inline-flex;gap:24px;font-size:12px;text-underline-offset:7px}
+.approach{background:#fff}
+.section-heading>p{max-width:310px;font-size:13px}
+.products{gap:20px}
+.product{background:#f5f7f5;border:1px solid #062b1f20;padding:28px 22px;border-top:2px solid #062b1f}
+.product-top{margin-bottom:28px}
+.product h3{font-family:"Playfair Display",Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-.03em}
+.product p{font-size:12px}
+.product .category{font-size:9px;letter-spacing:.12em}
+.product button{font-weight:500;border-radius:30px;border:1px solid #062b1f;padding:11px 13px;font-size:10px}
+.product button:hover{background:var(--ink);color:white}
+.development-note{font-size:10px;opacity:.8}
+.science{background:#fafbf9;border-block:1px solid #062b1f15}
+.science .split>div{font-size:14px}
+.principles{gap:36px}
+.principles h3{font-size:13px;font-weight:500;letter-spacing:.08em}
+.principles p{font-size:12px}
+.commitment{text-align:left;min-height:430px;background:linear-gradient(90deg,#062b1ff5,#062b1fcc 48%,#062b1f38),url('assets/trail-editorial.jpg') center 55%/cover;color:white}
+.commitment h2{font-size:clamp(44px,4.6vw,66px);max-width:650px}
+.commitment p:not(.eyebrow){margin:0 0 18px;max-width:480px;font-size:13px}
+.commitment em{color:inherit}
+.commitment .text-link{border:1px solid #fff;border-radius:40px;padding:10px 22px;text-decoration:none;margin-top:12px}
+.story{background:white}
+.story .split>div{font-size:14px}
+.story-lead{font-family:"Playfair Display",Georgia,serif}
+.contact{background:#f1f5f2;border-top:1px solid #062b1f20}
+.contact form{background:white;border:1px solid #062b1f20;padding:34px}
+.contact h2{font-size:clamp(42px,4.6vw,64px)}
+.contact>div>p{font-size:14px}
+.contact>div>.small{font-size:11px}
+.choices label{background:white}
+footer{border-top:1px solid #062b1f20;background:white}
+@media(max-width:1100px){
+ .hero-copy{padding-left:10%}.hero-markers{gap:24px}
+ .hero-bottle{height:530px;width:90%}.visual-motto{right:4%;top:30px}
+ .editorial-hero,.hero-art{min-height:590px}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:800px){
+ .editorial-hero{grid-template-columns:minmax(0,1fr)}
+ .hero-copy{padding:45px 7% 18px}
+ .hero-copy h1{font-size:clamp(46px,8vw,66px)}
+ .hero-copy h1 br:nth-of-type(2){display:none}
+ .hero-art{min-height:460px}.hero-bottle{height:450px;width:76%}
+ .hero-copy .intro{max-width:560px}
+ .visual-motto{right:10%;top:50px}
+ .daily{grid-template-columns:minmax(0,1fr)}
+ .daily-photo{min-height:380px}.daily-copy{padding:45px 7%}
+ .daily-photo img{object-position:35% 35%}
+ .section:not(.daily){padding:58px 7%}
+ .section h2{font-size:40px}
+ .commitment{background-position:65% center}
+}
+@media(max-width:480px){
+ .hero-copy h1{font-size:clamp(43px,11vw,54px)}
+ .hero-markers{gap:30px}.hero-markers>span{font-size:8px}
+ .hero-copy .intro{font-size:14px}
+ .hero-art{min-height:390px}.hero-bottle{height:390px;width:85%}
+ .visual-motto{right:5%;top:35px;font-size:8px}
+ .daily-photo{min-height:330px}
+ .section h2,.daily-copy h2{font-size:34px}
+ .products{grid-template-columns:minmax(0,1fr)}
+ .product h3{font-size:32px}.product p{font-size:14px}
+ .product button{font-size:12px}
+ .contact form{padding:24px 18px}
+ .commitment{background-image:linear-gradient(90deg,#062b1fe8,#062b1fab),url('assets/trail-editorial.jpg')}
+}
+/* Les lignes restent en arrière-plan pour préserver la lisibilité. */
+.editorial-hero::after{z-index:0;opacity:.28;mask-image:linear-gradient(to right,transparent 20%,#000 65%)}
+.hero-art{z-index:1;background:transparent}
+.hero-bottle{mix-blend-mode:normal}
