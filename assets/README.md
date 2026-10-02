@@ -13,3 +13,7 @@ Create a premium photorealistic product photograph for a French natural sports s
 ## Prompt sport et nature
 
 Wide cinematic editorial photograph for a premium natural sports brand website. Adult female trail runner wearing plain dark forest green technical running top, outdoors in the French Alps in soft morning daylight. Waist up profile portrait in left half, looking toward distant mountains on right, composed calm focused expression, realistic skin and tied up brown hair, backlit loose strands. Beautiful lush green mountain valley and lake receding into soft haze, right half offers spacious scenic landscape. Sophisticated muted forest green and cool white palette, natural candid athletic mood, no logos, no text, no UI. Landscape 3:2.
+
+## Packshot final fourni par Julie
+
+Le 2 octobre 2026 : `packshot.png` est le visuel final fourni par Julie, et `DA 1.png` sa référence de direction artistique. Le site utilise `packshot-final.jpg`, une copie JPEG optimisée sans modification du visuel. L’ancien `kick-off-studio.jpg` est archivé et n’est plus affiché. Les deux fichiers PNG sources sont conservés localement.
