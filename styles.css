@@ -156,7 +156,7 @@ main .button:focus-visible{outline-color:var(--ink)}
 .principles{gap:36px}
 .principles h3{font-size:13px;font-weight:500;letter-spacing:.08em}
 .principles p{font-size:12px}
-.commitment{text-align:left;min-height:430px;background:linear-gradient(90deg,#062b1ff5,#062b1fcc 48%,#062b1f38),url('assets/trail-editorial.jpg') center 55%/cover;color:white}
+.commitment{text-align:left;min-height:430px;background:linear-gradient(90deg,#062b1ff5,#062b1fcc 48%,#062b1f38),url('assets/pano-web.jpg') center 55%/cover;color:white}
 .commitment h2{font-size:clamp(44px,4.6vw,66px);max-width:650px}
 .commitment p:not(.eyebrow){margin:0 0 18px;max-width:480px;font-size:13px}
 .commitment em{color:inherit}
@@ -204,7 +204,7 @@ footer{border-top:1px solid #062b1f20;background:white}
  .product h3{font-size:32px}.product p{font-size:14px}
  .product button{font-size:12px}
  .contact form{padding:24px 18px}
- .commitment{background-image:linear-gradient(90deg,#062b1fe8,#062b1fab),url('assets/trail-editorial.jpg')}
+ .commitment{background-image:linear-gradient(90deg,#062b1fe8,#062b1fab),url('assets/pano-web.jpg')}
 }
 /* Les lignes restent en arrière-plan pour préserver la lisibilité. */
 .editorial-hero::after{z-index:0;opacity:.28;mask-image:linear-gradient(to right,transparent 20%,#000 65%)}
