@@ -1,5 +1,11 @@
 # Visuels de la direction artistique
 
+## Packshot détouré
+
+`packshot-transparent.png` : version à fond transparent, réalisée avec l’outil intégré imagegen à partir du fichier original `packshot.png`, conservé intact. Cette version est utilisée sur le site.
+
+Prompt : Remove only the white background from this exact finished product packshot. Output a genuinely transparent PNG alpha background. Preserve the bottle exactly: shape, size, black cap, amber glass, white label, all typography and every letter including LES SUPERS, KICK OFF, BOOST & FOCUS, AVANT LA SÉANCE, ÉNERGIE MENTALE, CONCENTRATION, RETARD DE FATIGUE, 60 ML, fine green wave graphics. Do not redesign, recolor, retouch, crop or alter the product. Keep same canvas and bottle position. Remove the ground reflection and background, retaining only a subtle translucent contact shadow if feasible. White label must remain opaque. This is background extraction only.
+
 Créés avec l’outil intégré imagegen le 2 octobre 2026, puis encodés en JPEG pour le web.
 
 - `kick-off-studio.jpg` : concept de packaging, pas une photographie de produit commercialisé.
