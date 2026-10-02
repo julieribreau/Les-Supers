@@ -114,7 +114,7 @@ main .button{border-radius:40px;font-weight:500;font-size:13px;padding:13px 27px
 main .button:hover{background:#174637;border-color:#174637}
 main .button:focus-visible{outline-color:var(--ink)}
 .editorial-hero{position:relative;grid-template-columns:1fr 1fr;min-height:650px;overflow:hidden;background:#fff}
-.editorial-hero::after{content:"";position:absolute;inset:12% 0 0;pointer-events:none;background:url('assets/flow-motion.svg') center bottom/100% auto no-repeat;opacity:.4}
+.editorial-hero::after{content:"";position:absolute;inset:12% 0 0;pointer-events:none;background:url('assets/flow-packshot.svg') center bottom/100% auto no-repeat;opacity:.4}
 .hero-copy{background:transparent;color:var(--ink);padding:70px 5% 50px 14%;position:relative;z-index:1}
 .hero-copy h1{font-size:clamp(52px,5.9vw,86px);line-height:1.02;margin-bottom:26px}
 .hero-copy h1 em,.hero-copy .small{color:var(--ink)}
@@ -215,3 +215,6 @@ footer{border-top:1px solid #062b1f20;background:white}
 .product button{background:var(--ink);color:#fff;border-color:var(--ink)}
 .product button:hover{background:#fff;color:var(--ink);border-color:var(--ink)}
 .editorial-hero::after{opacity:.43;mask-image:linear-gradient(to right,transparent 12%,#000 58%)}
+
+/* Vagues inspirées du dessin de l’étiquette : creux arrondi et remontée dense. */
+.editorial-hero::after{opacity:.5;mask-image:linear-gradient(to right,transparent 8%,#000 52%)}
