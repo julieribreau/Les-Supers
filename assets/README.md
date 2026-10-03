@@ -1,5 +1,11 @@
 # Visuels de la direction artistique
 
+## Fond décalé et prolongé
+
+`fond-1-prolonge.jpg` : édition de `Fond 1.png` avec l’outil intégré imagegen, motif décalé à droite et courbes prolongées à gauche. Original conservé.
+
+Prompt : Edit the provided abstract background. Keep the same white background, very thin dark forest green #062B1F contour lines and organic flowing wave character. Shift the existing wave composition to the RIGHT by about 18% of the canvas width, especially its intricate right-side curl, and extend the lines seamlessly into the newly empty LEFT portion. Preserve the recognizable deep trough and small intricate curl followed by rising fan. Left extension must smoothly continue the same individual curves without visible seams, abrupt joins, extra unrelated motifs or duplicated waves. Lines should occupy mainly lower half, with top left and top middle largely white to leave space for a website heading. Wide landscape aspect ratio approximately 2.16:1 matching original. No text, no bottle, no logos. This is an edit of the supplied background, not a new design.
+
 ## Packshot détouré
 
 `packshot-transparent.png` : version à fond transparent, réalisée avec l’outil intégré imagegen à partir du fichier original `packshot.png`, conservé intact. Cette version est utilisée sur le site.
