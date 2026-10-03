@@ -218,3 +218,13 @@ footer{border-top:1px solid #062b1f20;background:white}
 
 /* Vagues inspirées du dessin de l’étiquette : creux arrondi et remontée dense. */
 .editorial-hero::after{opacity:.5;mask-image:linear-gradient(to right,transparent 8%,#000 52%)}
+
+/* Fond fourni par Julie : remplace les vagues vectorielles précédentes. */
+.editorial-hero{background:linear-gradient(90deg,#ffffffd9, #ffffff00 65%),#fff url('assets/fond-1-web.jpg') center bottom/100% auto no-repeat}
+.editorial-hero::after{display:none}
+@media(max-width:800px){
+ .editorial-hero{background-size:auto 500px;background-position:right bottom}
+}
+@media(max-width:480px){
+ .editorial-hero{background-size:auto 400px}
+}
