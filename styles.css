@@ -267,3 +267,5 @@ footer{border-top:1px solid #062b1f20;background:white}
  .hero-bottle{transform:translateX(-24%)}
  .visual-motto{top:calc(50% - 209px);left:48%;right:auto}
 }
+
+.hero-copy .eyebrow::after{display:none}
