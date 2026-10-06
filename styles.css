@@ -236,3 +236,19 @@ footer{border-top:1px solid #062b1f20;background:white}
 @media(max-width:800px){.visual-motto{position:relative;top:auto;right:auto;width:auto;margin:0 7% 28px;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;font-size:11px}}
 @media(max-width:480px){.visual-motto{font-size:10px;letter-spacing:0;gap:10px}.visual-motto>span{padding-left:9px}}
 @media(max-width:800px){.hero-art{flex-direction:column}.hero-copy{min-width:0}.hero-copy .eyebrow{flex-wrap:wrap}.hero-copy h1 br:nth-of-type(2){display:initial}.visual-motto{align-self:stretch}}
+
+/* Dégager les engagements des courbes et rapprocher le flacon du titre. */
+@media(min-width:801px){
+ .hero-bottle{transform:translateX(-9%)}
+ .visual-motto{top:28px;right:12%;width:max-content;font-size:11px}
+ .visual-motto>span{white-space:nowrap}
+}
+@media(min-width:801px) and (max-width:1100px){
+ .hero-bottle{transform:translateX(-12%)}
+ .visual-motto{top:12px;right:8%;font-size:10px;gap:12px}
+}
+@media(max-width:800px){
+ .hero-bottle{transform:translateX(-5%)}
+ .visual-motto{grid-template-columns:1fr;justify-items:start;gap:12px}
+ .visual-motto>span{white-space:nowrap}
+}
