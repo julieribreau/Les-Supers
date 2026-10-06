@@ -252,3 +252,8 @@ footer{border-top:1px solid #062b1f20;background:white}
  .visual-motto{grid-template-columns:1fr;justify-items:start;gap:12px}
  .visual-motto>span{white-space:nowrap}
 }
+
+/* Une ligne continue accompagne les trois engagements rapprochés. */
+.visual-motto{gap:6px;border-left:1px solid currentColor;padding-left:12px}
+.visual-motto>span{border-left:0;padding-left:0}
+.hero-copy .eyebrow{flex-wrap:wrap}
